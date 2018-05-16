@@ -11,11 +11,11 @@ public class Pocetna {
 		listaNaBroevi.add(4);
 		listaNaBroevi.add(12);
 		listaNaBroevi.add(43);
-		listaNaBroevi.add(22);
+		listaNaBroevi.add(18);
 		listaNaBroevi.remove(0); 
 		List<Integer> pomaliOd50 = listaNaBroevi.stream()
-				.filter(x -> x<50)
-				.map(x -> x*15)
+				.filter(x -> x<20)
+				.map(x -> x*3)
 				.collect(Collectors.toList());
 		System.out.println(pomaliOd50);
 	}
